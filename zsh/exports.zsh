@@ -9,6 +9,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export CLICOLOR=1
 export PROJECTS=$HOME/projects
 export NODE_PATH=/usr/local/lib/node
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home
 
 export CLICOLOR=1 # turns on colors
 export LSCOLORS=gxfxcxdxbxegedabagacad
