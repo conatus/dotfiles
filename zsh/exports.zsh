@@ -32,4 +32,4 @@ fi
 source /usr/local/opt/nvm/nvm.sh
 
 # Select a version of Node to use.
-nvm use v0.10.26 > /dev/null
+nvm use v0.10.32 > /dev/null
