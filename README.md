@@ -14,5 +14,4 @@ To install some pretty vital Mac OS utilities, run `setup/brew` which requires [
 
 ## Todo
 
-- Integrate with Boxen
 - Ensure this works cross platform - currently heavily skewed to Mac development machines.
