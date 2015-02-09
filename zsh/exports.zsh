@@ -22,6 +22,8 @@ export RUBYOPT='rubygems' # Ruby always requires rubygems
 
 export TODOTXT_DEFAULT_ACTION=ls
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # rbenv Installation - if we have rbenv installed.
 if (( $+commands[rbenv] )) ; then
 	export PATH="$HOME/.rbenv/bin:$PATH"
