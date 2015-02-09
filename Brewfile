@@ -34,9 +34,9 @@ cask 'lastpass'
 
 cask 'alfred'
 cask 'caffeine'
-cask 'divvy'
 cask 'flux'
 cask 'the-unarchiver'
+cask 'spectacle'
 
 cask 'cyberduck'
 cask 'github'
