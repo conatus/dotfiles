@@ -43,7 +43,6 @@ cask 'github'
 cask 'intellij-idea'
 cask 'iterm2'
 cask 'sequel-pro'
-cask 'sublime-text'
 
 cask 'skype'
 cask 'spotify'
@@ -51,3 +50,6 @@ cask 'steam'
 cask 'vlc'
 
 cask 'nvalt'
+
+tap 'caskroom/versions'
+cask 'sublime-text3'
