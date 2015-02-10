@@ -31,6 +31,7 @@ cask 'vagrant'
 
 cask 'google-chrome'
 cask 'lastpass'
+cask 'torbrowser'
 
 cask 'alfred'
 cask 'caffeine'
@@ -48,6 +49,7 @@ cask 'skype'
 cask 'spotify'
 cask 'steam'
 cask 'vlc'
+cask 'plex-media-server'
 
 cask 'nvalt'
 
