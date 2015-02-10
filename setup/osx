@@ -94,6 +94,10 @@ defaults write com.apple.BezelServices kDim -bool true
 echo "Turn off keyboard illumination when computer is not used for 5 minutes"
 defaults write com.apple.BezelServices kDimTime -int 300
 
+echo "Setting trackpad & mouse speed to a reasonable number"
+defaults write -g com.apple.trackpad.scaling 2
+defaults write -g com.apple.mouse.scaling 2.5
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
@@ -103,6 +107,10 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
 echo "Disable shadow in screenshots"
 defaults write com.apple.screencapture disable-shadow -bool true
+
+echo "Requiring password immediately after sleep or screen saver begins"
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 echo "Enable subpixel font rendering on non-Apple LCDs"
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
@@ -155,8 +163,7 @@ echo "Decrease the size of icons on the desktop and in other icon views"
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 36" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 36" ~/Library/Preferences/com.apple.finder.plist
 
-# Use list view in all Finder windows by default
-# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
+echo "Use list view in all Finder windows by default"
 defaults write com.apple.Finder FXPreferredViewStyle -string "Nlsv"
 
 echo "Disable the warning before emptying the Trash"
@@ -170,6 +177,9 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 echo "Show the ~/Library folder"
 chflags nohidden ~/Library
+
+echo "Display full POSIX path as Finder window title"
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 echo "Remove Dropbox’s green checkmark icons in Finder"
 file=/Applications/Dropbox.app/Contents/Resources/check.icns
@@ -188,6 +198,9 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
 echo "Speed up Mission Control animations"
 defaults write com.apple.dock expose-animation-duration -float 0.1
+
+echo "Group windows by application in Mission Control"
+defaults write com.apple.dock "expose-group-by-app" -bool true
 
 echo "Don’t show Dashboard as a Space"
 defaults write com.apple.dock dashboard-in-overlay -bool true
@@ -222,8 +235,15 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Safari & WebKit                                                             #
 ###############################################################################
 
+echo "Don't send search queries to Apple"
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+
 echo "Set Safari’s home page to `about:blank` for faster loading"
 defaults write com.apple.Safari HomePage -string "about:blank"
+
+echo "Hiding Safari's sidebar in Top Sites"
+defaults write com.apple.Safari ShowSidebarInTopSites -bool false
 
 echo "Prevent Safari from opening ‘safe’ files automatically after downloading"
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
@@ -253,6 +273,15 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 echo "Enable the WebKit Developer Tools in the Mac App Store"
 defaults write com.apple.appstore WebKitDeveloperExtras -bool true
+
+###############################################################################
+# Chrome                                                                      #
+###############################################################################
+
+echo "Using the system-native print preview dialog in Chrome"
+defaults write com.google.Chrome DisablePrintPreview -bool true
+defaults write com.google.Chrome.canary DisablePrintPreview -bool true
+
 
 ###############################################################################
 # iTunes                                                                      #
