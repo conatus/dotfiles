@@ -52,6 +52,7 @@ cask 'vlc'
 cask 'plex-media-server'
 
 cask 'nvalt'
+cask 'todoist'
 
 tap 'caskroom/versions'
 cask 'sublime-text3'
