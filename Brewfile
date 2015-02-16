@@ -21,6 +21,12 @@ brew 'gnu-tar'
 brew 'rbenv'
 brew 'ruby-build'
 
+# PHP related.
+tap 'homebrew/dupes'
+tap 'homebrew/versions'
+tap 'homebrew/homebrew-php'
+brew 'php56'
+brew 'composer'
 
 # Cask
 tap 'caskroom/cask'
@@ -30,6 +36,8 @@ cask 'virtualbox'
 cask 'vagrant'
 
 cask 'google-chrome'
+cask 'firefox'
+cask 'opera'
 cask 'lastpass'
 cask 'torbrowser'
 
