@@ -58,6 +58,7 @@ cask 'spotify'
 cask 'steam'
 cask 'vlc'
 cask 'plex-media-server'
+cask 'max'
 
 cask 'nvalt'
 cask 'todoist'
