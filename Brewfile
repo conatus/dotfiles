@@ -63,5 +63,7 @@ cask 'max'
 cask 'nvalt'
 cask 'todoist'
 
+cask 'libreoffice'
+
 tap 'caskroom/versions'
 cask 'sublime-text3'
