@@ -39,6 +39,8 @@ cask 'arq'
 cask 'virtualbox'
 cask 'vagrant'
 
+cask 'dropbox'
+
 cask 'google-chrome'
 cask 'firefox'
 cask 'opera'
