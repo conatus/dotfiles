@@ -8,9 +8,15 @@ OSX defaults learnt from [Mathais Bynens](https://github.com/mathiasbynens/dotfi
 
 ### Mac OS X
 
-For setting up some sensible defaults and removal of some annoyances from Mac OS run `setup/osx`. 
+Essential Mac OS X utilties are managed with [Brewdler](https://github.com/Homebrew/homebrew-brewdler). Assuming Homebrew is successfully installed all you need to do is.
 
-To install some pretty vital Mac OS utilities, run `setup/brew` which requires [Homebrew](http://mxcl.github.com/homebrew/) to be installed.
+```
+$ ./install.sh
+```
+
+That's it. 
+
+This also sets up a huge number of sensible Mac OS X defaults which can be seen in the file `setup/osx`.
 
 ## Todo
 
