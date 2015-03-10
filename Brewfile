@@ -29,6 +29,10 @@ brew 'php56'
 brew 'composer'
 
 # Cask
+
+# Install Cask
+brew 'caskroom/cask/brew-cask'
+
 tap 'caskroom/cask'
 cask 'arq'
 
