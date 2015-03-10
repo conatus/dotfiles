@@ -20,6 +20,7 @@ brew 's3cmd'
 brew 'gnu-tar'
 brew 'rbenv'
 brew 'ruby-build'
+brew 'pwgen'
 
 # PHP related.
 tap 'homebrew/dupes'
