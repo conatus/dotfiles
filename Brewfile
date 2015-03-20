@@ -62,6 +62,7 @@ cask 'sequel-pro'
 
 cask 'skype'
 cask 'spotify'
+cask 'spotify-notifications'
 cask 'steam'
 cask 'vlc'
 cask 'plex-media-server'
