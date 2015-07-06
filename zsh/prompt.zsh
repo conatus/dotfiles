@@ -35,39 +35,6 @@ need_push () {
   fi
 }
 
-# This keeps the number of todos always available the right hand side of my
-# command line.
-todo(){
-  if $(which todo.sh &> /dev/null)
-  then
-    num=$(echo $(todo.sh ls | tail -n 1 | cut -d " " -f2 ))
-    
-    if [ $num != 0 ]
-    then
-      echo "$num"
-    else
-      echo ""
-    fi
-  else
-    echo ""
-  fi
-}
-
-# Check we have Punch.py installed and if so show current task.
-current_task(){
-  if $(which punch &> /dev/null); then
-    if punch wh | grep -v 'No task is active.' &> /dev/null
-      then
-        echo "\n$(punch wh | cut -d ":" -f2 | sed 's/^[ \t]*//')"
-        
-    else
-      echo ""
-    fi
-  else
-    echo ""
-  fi
-}
-
 title(){
   printf "\033]0;%s\007" "$1"
 }
@@ -96,8 +63,7 @@ set_prompt () {
   # Could use preexec or precmd
   #title `pwd`
 
-  export PROMPT=$'\n$(user_name) at $(host_name) in $(directory_name) $(git_dirty)$(need_push)$(current_task)\n› ' 
-  export RPROMPT="%{$fg_bold[gray]%}$(todo)%{$reset_color%}"
+  export PROMPT=$'\n$(user_name) at $(host_name) in $(directory_name) $(git_dirty)$(need_push)\n› '
 }
 
 precmd() {

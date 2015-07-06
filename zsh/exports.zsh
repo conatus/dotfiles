@@ -20,8 +20,6 @@ export GREP_OPTIONS='--color=auto'
 
 export RUBYOPT='rubygems' # Ruby always requires rubygems
 
-export TODOTXT_DEFAULT_ACTION=ls
-
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # rbenv Installation - if we have rbenv installed.

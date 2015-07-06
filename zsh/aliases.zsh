@@ -7,6 +7,9 @@ alias c='bundle exec cucumber'
 # Run git status
 alias s='git status'
 
+# Run git log
+alias l='git log'
+
 # Edit the current directory in Sublime Edit
 alias e='subl .'
 
@@ -22,17 +25,6 @@ alias c='clear'
 # Locate IP
 alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | 
    cut -d\   -f2"
-
-# Run todo.sh
-alias td="echo && todo.sh | sort | sed '1d;\$d'"
-alias d="todo.sh do"
-alias a="todo.sh add"
-alias te="$EDITOR ~/Documents/todo/todo.txt"
-
-# Run Punch.py
-alias i="punch in"
-alias o="punch out"
-alias r="punch report"
 
 alias e="$EDITOR ."
 
