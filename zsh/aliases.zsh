@@ -1,9 +1,6 @@
 # Open Dotfiles
 alias z="$EDITOR ~/Code/dotfiles"
 
-# Run Cucumber
-alias c='bundle exec cucumber'
-
 # Run git status
 alias s='git status'
 
@@ -13,17 +10,14 @@ alias l='git log'
 # Edit the current directory in Sublime Edit
 alias e='subl .'
 
-# Run PHPUnit Tests (In Laravel Artisan)
-alias q='php artisan test'
-
-# Run PHPUnit
-alias p='phpunit tests'
+# Run npm test
+alias t='npm test'
 
 # Clear screen
 alias c='clear'
 
 # Locate IP
-alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | 
+alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 |
    cut -d\   -f2"
 
 alias e="$EDITOR ."
