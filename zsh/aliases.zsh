@@ -8,7 +8,7 @@ alias s='git status'
 alias l='git log'
 
 # Edit the current directory in Sublime Edit
-alias e='subl .'
+alias e='atom .'
 
 # Run npm test
 alias t='npm test'
