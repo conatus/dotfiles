@@ -3,7 +3,7 @@ export CDPATH=~/projects:~/
 export RUBYOPT='rubygems'
 export GREP_OPTIONS='--color=auto' 
 export GREP_COLOR='3;33'
-export EDITOR='subl -w'
+export EDITOR='atom'
 export TERM=xterm-color
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export CLICOLOR=1
@@ -32,4 +32,4 @@ fi
 source /usr/local/opt/nvm/nvm.sh
 
 # Select a version of Node to use.
-nvm use stable > /dev/null
+nvm use v5.1.0 > /dev/null
