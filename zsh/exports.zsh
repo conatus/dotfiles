@@ -1,7 +1,7 @@
 export MANPATH=/opt/local/share/man:$MANPATH
 export CDPATH=~/projects:~/
 export RUBYOPT='rubygems'
-export GREP_OPTIONS='--color=auto' 
+export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='3;33'
 export EDITOR='atom'
 export TERM=xterm-color
@@ -16,7 +16,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export TERM=xterm-color
 
 export GREP_COLOR='3;33'
-export GREP_OPTIONS='--color=auto' 
+export GREP_OPTIONS='--color=auto'
 
 export RUBYOPT='rubygems' # Ruby always requires rubygems
 
