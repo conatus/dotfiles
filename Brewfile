@@ -75,3 +75,5 @@ cask 'libreoffice'
 
 tap 'caskroom/versions'
 cask 'sublime-text3'
+cask 'atom'
+cask 'divvy'
