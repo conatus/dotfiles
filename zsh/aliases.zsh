@@ -28,6 +28,8 @@ alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 |
 
 alias e="$EDITOR ."
 
+alias today="todo -a -d today"
+
 # Reload .zshrc
 function zr () {
   source $HOME/.zshrc
