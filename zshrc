@@ -20,3 +20,14 @@ fi
 
 # Disable Boxen for the moment.
 #source /opt/boxen/env.sh
+. "/Users/alex/.acme.sh/acme.sh.env"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/alex/Downloads/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/alex/Downloads/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/alex/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/alex/Downloads/google-cloud-sdk/completion.zsh.inc'
+fi
