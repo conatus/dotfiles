@@ -13,3 +13,4 @@ add /Applications/MAMP/Library/bin:/Applications/MAMP/bin
 add /Applications/MAMP/bin/php/php5.3.6/bin
 add /usr/local/heroku/bin
 add $GOPATH/bin
+add $HOME/.composer/vendor/bin
