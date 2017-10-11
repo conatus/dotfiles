@@ -26,7 +26,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # rbenv Installation - if we have rbenv installed.
 if (( $+commands[rbenv] )) ; then
-	export PATH="$HOME/.rbenv/bin:$PATH"
 	eval "$(rbenv init -)"
 fi
 
