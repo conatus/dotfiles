@@ -22,3 +22,4 @@ This also sets up a huge number of sensible Mac OS X defaults which can be seen 
 
 - Keyboard repeat is not quite fast enough - perhaps they have changed the Mac OS X API?
 - Ensure this works cross platform - currently heavily skewed to Mac development machines.
+- Convert to Ansible
