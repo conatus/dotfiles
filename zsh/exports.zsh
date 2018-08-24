@@ -29,8 +29,7 @@ if (( $+commands[rbenv] )) ; then
 	eval "$(rbenv init -)"
 fi
 
-# nvm installation
-source /usr/local/opt/nvm/nvm.sh
-
-# Select a version of Node to use.
-nvm use v5.1.0 > /dev/null
+# Use nvm ZSH plugin if it exists.
+if [ -e "/Users/alex/Code/zsh-nvm/zsh-nvm.plugin.zsh" ]; then
+	source /Users/alex/Code/zsh-nvm/zsh-nvm.plugin.zsh
+fi
