@@ -51,6 +51,10 @@ function this {
   echo "Set current working project to `pwd`"
 }
 
+function killport () {
+  lsof -i TCP:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9
+}
+
 function internet {
   if (ping -c 3 -t 3 google.com > /dev/null 2>&1)
   then
