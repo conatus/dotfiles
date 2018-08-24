@@ -40,6 +40,12 @@ function trash () {
   mv $* ~/.Trash
 }
 
+function pw () {
+  pwgen -ys 50 1 | pbcopy
+  echo "New password copied to clipboard"
+  # TODO: Remove password after a minute with: pbcopy < /dev/null
+}
+
 function this {
   pwd > ~/bin/config/current_project_path
   echo "Set current working project to `pwd`"
